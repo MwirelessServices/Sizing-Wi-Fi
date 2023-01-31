@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <script src="script.js" defer></script> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <title>Sizing Wi-Fi</title>
+  </head>
+  <head>
+    <title>Sizing Wi-Fi</title>
+  </head>
+
+ <body>
+	<h2>SIZING Wi-Fi</h2>
+
+	<p>Tipo de local:</p>
+	<select id="tipo_local">
+		<option value="Interno">Interno</option>
+		<option value="Externo">Externo</option>
+	</select>
+
+	<p>Quantidade de andares:</p>
+	<input type="number" id="andares" 
+  placeholder="Digite a quantidade de andar que possui local..." class="inputs required">
+
+	<p>Altura do local (m²):</p>
+	<input type="number" id="altura"
+  placeholder="Informe a altura do local..." class="inputs required">
+
+	<p>Tamanho do ambiente (m²):</p>
+	<input type="number" id="tamanho_ambiente"
+  placeholder="Informe o tamanho da area do ambiente..." class="inputs required">
+
+  <p>Qual a quantidade de usuarios conectados simuntanêos:</p>
+	<input type="number" id="qtd_usuario"
+  placeholder="Informe a quantidade de usuario que vão conectar..." class="inputs required">
+
+
+
+	<br><br>
+	<button onclick="calcularEquipamento()">Calcular</button>
+
+	<p id="resultado"></p>
+</body>
+
+</html> 
+        
