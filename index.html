@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
-    <script src="script.js" defer></script> 
+    <link rel="stylesheet" href="./style.css">
+     <script src="script.js" defer></script> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet">
@@ -15,37 +15,70 @@
     <title>Sizing Wi-Fi</title>
   </head>
 
- <body>
-	<h2>SIZING Wi-Fi</h2>
+ <body> 
 
-	<p>Tipo de local:</p>
-	<select id="tipo_local">
-		<option value="Interno">Interno</option>
-		<option value="Externo">Externo</option>
-	</select>
 
-	<p>Quantidade de andares:</p>
-	<input type="number" id="andares" 
-  placeholder="Digite a quantidade de andar que possui local..." class="inputs required">
+<div    class="Page" > 
+<div  class="Title">
+          <h1>Venda Wi-Fi de baixa complexidade? <br><br> Faça a sua Simulação !</h1>
+            <img src="astronauta.svg" class="imageastro" alt="">
 
-	<p>Altura do local (m²):</p>
-	<input type="number" id="altura"
-  placeholder="Informe a altura do local..." class="inputs required">
-
-	<p>Tamanho do ambiente (m²):</p>
-	<input type="number" id="tamanho_ambiente"
-  placeholder="Informe o tamanho da area do ambiente..." class="inputs required">
-
-  <p>Qual a quantidade de usuarios conectados simuntanêos:</p>
-	<input type="number" id="qtd_usuario"
-  placeholder="Informe a quantidade de usuario que vão conectar..." class="inputs required">
+        
+</div>
 
 
 
-	<br><br>
-	<button onclick="calcularEquipamento()">Calcular</button>
+<div class="Card">
+  <br>
+        <h1>Sizing Wi-Fi</h1>
+<br>
+    <label for="produto">Qual o tipo de produto:</label>
+    <select id="tipo_produto">
+      <option value="espaço"></option required>
+      <option value="SmartConnect">Smart Connect</option required>
+      <option value="SmartFiPro">Smart Fi Pro</option required>
+</select>
 
-	<p id="resultado"></p>
+    <label for="local">Tipo de local:</label>
+      <select id="tipo_local">
+      <option value="espaço"></option required>
+      <option value="Interno">Interno</option required>
+      <option value="Externo">Externo</option required>
+</select>
+
+
+    <label for="andar">Quantidade de andares:</label>
+    <input type="number" id="andares" 
+      placeholder= "Digite a quantidade de andar..." class="inputs required"  >
+
+    <label for="Taltura">Altura do local (m²):</label>
+    <input type="number" id="altura"
+      placeholder="Informe a altura do local..." class="inputs required">
+
+    <label for="Tambiente">Tamanho do ambiente (m²):</label>
+    <input type="number" id="tamanho_ambiente"
+      placeholder="Informe o tamanho do ambiente..." class="inputs required">
+      
+
+    <label for="usuario">Usuarios conectados simuntanêamente:</label>
+	  <input type="number" id="qtd_usuario"
+      placeholder="Informe a quantidade de usuario..." class="inputs required">
+
+      <div class="BNT">
+        <button onclick="calcularEquipamento()">Calcular</button>
+        </div>
+
+
+</div>
+
+<div id="telaResultado" class="telaResultado" style="display:none;">
+  <p id="resultado"></p>
+  <button id="botaoSair" onclick="ocultarTelaResultado()">Sair</button>
+</div>
+
+
+            <script src="https://kit.fontawesome.com/66a579f40c.js" crossorigin="anonymous"></script>
+
 </body>
 
 </html> 
