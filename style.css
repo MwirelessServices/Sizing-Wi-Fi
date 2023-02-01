@@ -1,0 +1,127 @@
+
+
+
+body{
+  width: 100%;
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+}
+
+.Page{
+      width: 100vw;
+      height: 100vh;
+      background: linear-gradient(90deg, #363939 0%, #333836 80%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.Title{
+      width: 50vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction:column ;
+}
+.Title > h1{
+      color: #48D1CC	;
+   
+}
+
+.Card{
+      width: 25%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 0px 30px;
+      color: #2f2841;
+      border-radius: 35px;
+      box-shadow: 0px 10px 40px  #00000056;
+      
+  
+}
+.Card > h1{
+  
+  font-size: 3vw;
+       color: #00dbde;
+       font-weight: 800;
+       margin: 0;
+  
+}
+.imageastro{
+width: 35vw;
+
+
+}
+
+
+.Card > select ,input{
+        width: 100%;
+        border: none;
+        border-radius: 10px;
+        padding: 8px;
+        background-color: hsl(0, 0%, 100%);
+        color:#193636 ;
+        font-size: 12pt;
+        box-shadow: 0px 8px 18px  #085bf556;
+        box-sizing: border-box;
+        margin-bottom: 13px; 
+      }
+
+.Card > label{
+
+        color: #709072;
+        margin-bottom:0px;
+        
+}
+
+.BNT button{
+       
+          padding: 10px 20px;
+          margin: 20px;
+          border: none;
+          border-radius: 20px;
+          outline: none;
+          text-transform: uppercase;
+          font-weight: 800;
+          letter-spacing: 3px;
+          color: #fff;
+          background-color: #00dbde;
+          cursor: pointer;
+          box-shadow: 2px 2px 3px #999;
+          transition: all 0.3s ease-in-out;
+          border-radius: 10px;
+          margin-top: 0px;
+          display: flex;
+          justify-content: center;
+    }
+    .BNT button:hover {
+      background-color: #00ffae;
+    }
+
+    .BNT button:active {
+      transform: translateY(2px); 
+      box-shadow: 0px 0px 10px #666; 
+    }
+    
+    .inputs.required::placeholder {
+      font-family: "Poppins", sans-serif;
+      font-size: 10pt;
+        box-shadow: 0px 10px 50px  #0a030356;
+        box-sizing: border-box;
+    }
+
+    .telaResultado {
+      background-color: white;
+      width: 50%;
+      height: 50%;
+      position: absolute;
+      top: 25%;
+      left: 25%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
